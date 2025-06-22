@@ -1,88 +1,89 @@
-# Go Bootcamp: Интенсивное погружение в Golang
+# Go Bootcamp: Intensive Deep Dive into Golang
 
-Этот репозиторий содержит решения задач из интенсивного курса по Go, охватывающего ключевые аспекты языка программирования Golang. Курс представляет собой серию практических заданий, каждое из которых фокусируется на различных возможностях языка и стандартной библиотеки.
+This repository contains solutions to tasks from an intensive Go course covering key aspects of the Go programming language. The course is a series of practical assignments, each focusing on different features of the language and the standard library.
 
-## Основные темы
+## Main Topics
 
-### Работа с файловой системой и CLI:
-- Реализация Unix-подобных утилит (find, wc, xargs)  
-- Обработка больших файлов и потоков данных  
-- Параллельное выполнение задач  
+### Working with File Systems and CLI:
+- Implementation of Unix-like utilities (find, wc, xargs)  
+- Processing large files and data streams  
+- Parallel task execution  
 
-### Структуры данных и алгоритмы:
-- Бинарные деревья и алгоритмы обхода  
-- Кучи (heaps) и приоритетные очереди  
-- Решение задачи о рюкзаке  
-- Статистические вычисления  
+### Data Structures and Algorithms:
+- Binary trees and traversal algorithms  
+- Heaps and priority queues  
+- Knapsack problem solutions  
+- Statistical calculations  
 
-### Работа с данными:
-- Обработка форматов XML/JSON  
-- Сравнение структур данных  
-- Сериализация и десериализация  
+### Data Handling:
+- Processing XML/JSON formats  
+- Data structure comparison  
+- Serialization and deserialization  
 
-### Продвинутые концепции:
-- Конкурентность (горутины и каналы)  
-- Рефлексия и работа с интерфейсами  
-- Межъязыковое взаимодействие (CGO)  
-- Оптимизация производительности  
+### Advanced Concepts:
+- Concurrency (goroutines and channels)  
+- Reflection and interface usage  
+- Interlanguage interaction (CGO)  
+- Performance optimization  
 
-## Особенности проекта
+## Project Features
 
-- **Практический подход:** Каждое задание решает реальную прикладную задачу  
-- **Идиоматичный Go:** Код написан в соответствии с best practices языка  
-- **Комплексное тестирование:** Все решения сопровождаются юнит-тестами  
-- **Оптимизация:** Включает профилирование и оптимизацию производительности  
-- **Документация:** Подробное описание решений и подходов  
+- **Practical approach:** Each assignment solves a real-world task  
+- **Idiomatic Go:** Code follows Go best practices  
+- **Comprehensive testing:** All solutions come with unit tests  
+- **Optimization:** Includes profiling and performance tuning  
+- **Documentation:** Detailed explanations of solutions and approaches  
 
-## Технологический стек
+## Technology Stack
 
-- **Язык:** Go 1.20+  
-- **Библиотеки:**  
-  - Стандартная библиотека Go (sync, net/http, encoding и др.)  
-  - Тестирование (go test, testify)  
-  - Профилирование (pprof)  
-  - Документирование (godoc)  
+- **Language:** Go 1.20+  
+- **Libraries:**  
+  - Go standard library (sync, net/http, encoding, etc.)  
+  - Testing (go test, testify)  
+  - Profiling (pprof)  
+  - Documentation (godoc)  
 
-## Структура репозитория
+## Repository Structure
 
 ```text
-├── Day00_Statistics/        # Базовые статистические вычисления
-├── Day01_DataComparison/    # Сравнение XML/JSON и файловых систем
-├── Day02_UnixTools/         # Реализация Unix-подобных утилит
-├── Day05_DataStructures/    # Деревья, кучи, алгоритмы
-├── Day07_Algorithms/        # Задачи размена монет, оптимизация
-├── Day08_AdvancedConcepts/  # Указатели, рефлексия, CGO
-└── Day09_Concurrency/       # Паттерны конкурентного программирования
-```
+├── Day00_Statistics/        # Basic statistical calculations
+├── Day01_DataComparison/    # Comparing XML/JSON and file systems
+├── Day02_UnixTools/         # Implementation of Unix-like utilities
+├── Day05_DataStructures/    # Trees, heaps, algorithms
+├── Day07_Algorithms/        # Coin change tasks, optimization
+├── Day08_AdvancedConcepts/  # Pointers, reflection, CGO
+└── Day09_Concurrency/       # Concurrency programming patterns
+````
 
-Каждая директория содержит:  
-- Исходный код решения  
-- Юнит-тесты  
-- Примеры использования  
-- Документацию  
+Each directory contains:
 
-## Как использовать
+* Source code solutions
+* Unit tests
+* Usage examples
+* Documentation
 
-Клонируйте репозиторий:
+## How to Use
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/Dmitrii-Khramtsov/Go_Bootcamp_s21.git
+git clone https://github.com/your-username/go-bootcamp.git
 ```
 
-Перейдите в директорию нужного дня:
+Navigate to the directory for the desired day:
 
 ```bash
 cd go-bootcamp/DayXX_Topic
 ```
 
-Соберите и запустите решение:
+Build and run the solution:
 
 ```bash
 go build -o app main.go
-./app [параметры]
+./app [parameters]
 ```
 
-Запустите тесты:
+Run the tests:
 
 ```bash
 go test -v ./...
